@@ -42,8 +42,8 @@
                 fkeys_layer {
                         bindings = <
    &mt GRAVE ESC &kp F1 &kp F2 &kp F3 &kp F4 &trans         &kp K_NEXT &bt BT_CLR &trans &trans &trans &kp C_VOLUME_UP
-   &kp LSHIFT &kp F5   &kp F6 &kp F7   &kp F8   &trans                &kp K_PREV &bp BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp C_VOLUME_DOWN
-   &kp LCTRL &kp F9   &kp F10 &kp F11   &kp F12   &trans                &trans &bp BL_SEL 4  &trans &trans &trans &kp C_MUTE
+   &kp LSHIFT &kp F5   &kp F6 &kp F7   &kp F8   &trans                &kp K_PREV &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp C_VOLUME_DOWN
+   &kp LCTRL &kp F9   &kp F10 &kp F11   &kp F12   &trans                &trans &bt BL_SEL 4  &trans &trans &trans &kp C_MUTE
                     	     &mt LGUI ESC &trans   &kp SPACE         &mt RSHIFT RET  &trans  &mt RALT BSPC
                         >;
                 };
