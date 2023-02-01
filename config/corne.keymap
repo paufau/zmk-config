@@ -14,37 +14,37 @@
 
                 default_layer {
                         bindings = <
-   &mt GRAVE ESC &kp Q &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHIFT &kp A &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B       &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp TAB
-                  &mt LGUI ESC &mo 1 &kp SPACE   &mt RSHIFT RET &mo 2 &mt RALT BSPC
+   &mt GRAVE ESC  &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y           &kp U  &kp I          &kp O    &kp P     &kp BSPC
+   &kp LSHIFT     &kp A  &kp S  &kp D  &kp F  &kp G             &kp H           &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
+   &kp LCTRL      &kp Z  &kp X  &kp C  &kp V  &kp B             &kp N           &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp TAB
+                         &mt LGUI ESC  &mo 1  &kp SPACE         &mt RSHIFT RET  &mo 2  &mt RALT BSPC
                         >;
                 };
 
                 numeric_layer {
                         bindings = <
-   &mt GRAVE ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5          &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &kp LSHIFT &trans &trans &trans &trans &trans          &trans &kp UP &kp DOWN &kp LEFT &kp RIGHT &kp RSHIFT
-   &kp LCTRL  &trans       &trans       &trans       &trans       &trans                &trans   &kp PAGE_UP   &kp PAGE_DOWN &trans    &trans &kp TAB
-                          	        &mt LGUI ESC     &trans       &kp SPACE         &mt RSHIFT RET  &mo 3  &mt RALT BSPC
+   &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp N6  &kp N7        &kp N8         &kp N9    &kp N0     &trans
+   &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp UP        &kp DOWN       &kp LEFT  &kp RIGHT  &kp RSHIFT
+   &trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp PAGE_UP   &kp PAGE_DOWN  &trans    &trans     &trans
+                           &trans  &trans  &trans          &trans  &mo 3         &trans
                         >;
                 };
 
                 symbolic_layer {
                         bindings = <
-   &mt GRAVE ESC &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT         &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LSHIFT &trans   &trans &trans   &trans   &trans                &kp EQUAL &kp SQT &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LCTRL &trans   &trans &trans   &trans   &trans                &kp MINUS &kp LBRC  &kp RBRC        &kp &trans &kp PIPE &kp TAB
-                    	     &mt LGUI ESC &mo 3   &kp SPACE         &mt RSHIFT RET  &trans    &mt RALT BSPC
+   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT         &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+   &trans  &trans    &trans  &trans    &trans    &trans            &kp EQUAL  &kp SQT   &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+   &trans  &trans    &trans  &trans    &trans    &trans            &kp MINUS  &kp LBRC  &kp RBRC         &trans    &kp PIPE  &kp TAB
+                    	     &trans    &mo 3     &trans            &trans     &trans    &trans
                         >;
                 };
 
                 fkeys_layer {
                         bindings = <
-   &mt GRAVE ESC &kp F1 &kp F2 &kp F3 &kp F4 &trans         &kp K_NEXT &bt BT_CLR &trans &trans &trans &kp C_VOLUME_UP
-   &kp LSHIFT &kp F5   &kp F6 &kp F7   &kp F8   &trans                &kp K_PREV &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp C_VOLUME_DOWN
-   &kp LCTRL &kp F9   &kp F10 &kp F11   &kp F12   &trans                &trans &bt BL_SEL 4  &trans &trans &trans &kp C_MUTE
-                    	     &mt LGUI ESC &trans   &kp SPACE         &mt RSHIFT RET  &trans  &mt RALT BSPC
+   &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans         &kp K_NEXT &bt BT_CLR    &trans        &trans        &trans        &kp C_VOLUME_UP
+   &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans         &kp K_PREV &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp C_VOLUME_DOWN
+   &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans         &trans     &bt BL_SEL 4  &trans        &trans        &trans        &kp C_MUTE
+                            &trans   &trans   &trans         &trans     &trans        &trans
                         >;
                 };
         };
