@@ -24,9 +24,9 @@
                 numeric_layer {
                         bindings = <
    &mt GRAVE ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5          &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4          &trans &kp UP &kp DOWN &kp LEFT &kp RIGHT &kp RSHIFT
+   &kp LSHIFT &trans &trans &trans &trans &trans          &trans &kp UP &kp DOWN &kp LEFT &kp RIGHT &kp RSHIFT
    &kp LCTRL  &trans       &trans       &trans       &trans       &trans                &trans   &kp PAGE_UP   &kp PAGE_DOWN &trans    &trans &kp TAB
-                          	        &mt LGUI ESC     &trans       &kp SPACE         &mt RSHIFT RET  &trans   &mt RALT BSPC
+                          	        &mt LGUI ESC     &trans       &kp SPACE         &mt RSHIFT RET  &mo 3  &mt RALT BSPC
                         >;
                 };
 
@@ -35,15 +35,15 @@
    &mt GRAVE ESC &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT         &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LSHIFT &trans   &trans &trans   &trans   &trans                &kp EQUAL &kp SQT &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LCTRL &trans   &trans &trans   &trans   &trans                &kp MINUS &kp LBRC  &kp RBRC        &kp &trans &kp PIPE &kp TAB
-                    	     &mt LGUI ESC &trans   &kp SPACE         &mt RSHIFT RET  &trans    &mt RALT BSPC
+                    	     &mt LGUI ESC &mo 3   &kp SPACE         &mt RSHIFT RET  &trans    &mt RALT BSPC
                         >;
                 };
 
                 fkeys_layer {
                         bindings = <
-   &mt GRAVE ESC &kp F1 &kp F2 &kp F3 &kp F4 &trans         &kp K_NEXT &trans &trans &trans &trans &kp C_VOLUME_UP
-   &kp LSHIFT &kp F5   &kp F6 &kp F7   &kp F8   &trans                &kp K_PREV &trans &trans &trans &trans &kp C_VOLUME_DOWN
-   &kp LCTRL &kp F9   &kp F10 &kp F11   &kp F12   &trans                &trans &trans  &trans &trans &trans &kp C_MUTE
+   &mt GRAVE ESC &kp F1 &kp F2 &kp F3 &kp F4 &trans         &kp K_NEXT &bt BT_CLR &trans &trans &trans &kp C_VOLUME_UP
+   &kp LSHIFT &kp F5   &kp F6 &kp F7   &kp F8   &trans                &kp K_PREV &bp BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp C_VOLUME_DOWN
+   &kp LCTRL &kp F9   &kp F10 &kp F11   &kp F12   &trans                &trans &bp BL_SEL 4  &trans &trans &trans &kp C_MUTE
                     	     &mt LGUI ESC &trans   &kp SPACE         &mt RSHIFT RET  &trans  &mt RALT BSPC
                         >;
                 };
