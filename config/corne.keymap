@@ -46,7 +46,7 @@
                 };
 
                 backtab {
-                        binding = <&btab>;
+                        bindings = <&btab>;
                         key-positions = <31 32>;
                 };
         };
