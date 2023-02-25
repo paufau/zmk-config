@@ -8,18 +8,46 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+&mt {
+        tapping-term-ms = <400>;
+};
+
 / {
+
+            macros {
+        btab: btab {
+            label = "btab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
+
         combos {
                 compatible = "zmk,combos";
 
-                backspace {
-                        bindings = <&kp BSPC>;
+                delete {
+                        bindings = <&kp DELETE>;
                         key-positions = <8 9>;
                 };
 
-                delete {
-                        bindings = <&kp DELETE>;
+                backspace {
+                        bindings = <&kp BSPC>;
                         key-positions = <7 8>;
+                };
+
+                tab {
+                        bindings = <&kp TAB>;
+                        key-positions = <32 33>;
+                };
+
+                backtab {
+                        binding = <&btab>;
+                        key-positions = <31 32>;
                 };
         };
 
